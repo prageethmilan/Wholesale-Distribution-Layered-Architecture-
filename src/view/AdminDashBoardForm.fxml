@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="adminDashBoardContext" prefHeight="1000.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminDashBoardFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f63c9" height="134.0" stroke="BLACK" strokeType="INSIDE" width="1931.0" />
+      <JFXButton buttonType="RAISED" layoutX="33.0" layoutY="44.0" onAction="#backToLogin" prefHeight="44.0" prefWidth="119.0" stylesheets="@assets/styles/Button.css" text="Log Out">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="611.0" layoutY="21.0" text="Wholesale Distribution" textFill="#eaff00" textOverrun="CENTER_ELLIPSIS" underline="true">
+         <font>
+            <Font name="High Tower Text Italic" size="79.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" alignment="CENTER_RIGHT" layoutX="1734.0" layoutY="91.0" text="2021 - 08 - 20">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" alignment="CENTER_RIGHT" layoutX="1666.0" layoutY="1.0" prefHeight="94.0" prefWidth="251.0" text="08:15:26">
+         <font>
+            <Font name="System Bold" size="58.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutY="134.0" prefHeight="875.0" prefWidth="1931.0" style="-fx-background-color: #6ECFEF;" />
+      <JFXTabPane layoutY="134.0" prefHeight="875.0" prefWidth="1931.0" stylesheets="@assets/styles/Button.css">
+         <tabs>
+            <Tab styleClass="tab-main" text="Stock Management">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" stylesheets="@assets/styles/Button.css">
+                     <children>
+                        <TableView fx:id="tblItem" layoutX="324.0" layoutY="384.0" prefHeight="372.0" prefWidth="1284.0" style="-fx-background-color: white;">
+                          <columns>
+                            <TableColumn fx:id="colItemCode" prefWidth="117.00003051757812" text="Item Code" />
+                            <TableColumn fx:id="colDescription" prefWidth="376.9999694824219" text="Description" />
+                              <TableColumn fx:id="colPackSize" prefWidth="187.0" text="Pack Size" />
+                              <TableColumn fx:id="colQuantity" prefWidth="182.0" text="Quantity On Hand" />
+                              <TableColumn fx:id="colDiscount" prefWidth="204.0" text="Discount(Rs.)" />
+                              <TableColumn fx:id="colUnitPrice" prefWidth="214.0" text="Unit Price(Rs.)" />
+                          </columns>
+                        </TableView>
+                        <JFXTextField fx:id="txtItemCode" editable="false" labelFloat="true" layoutX="324.0" layoutY="60.0" prefHeight="47.0" prefWidth="345.0" promptText="Item Code" text="I-001">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txtDescription" labelFloat="true" layoutX="755.0" layoutY="60.0" onAction="#moveToPackSize" prefHeight="47.0" prefWidth="850.0" promptText="Description">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txtPackSize" labelFloat="true" layoutX="324.0" layoutY="154.0" onAction="#moveToQtyOnHand" prefHeight="47.0" prefWidth="239.0" promptText="Pack Size">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txtQuantityOnHand" labelFloat="true" layoutX="642.0" layoutY="154.0" onAction="#moveToDiscount" prefHeight="47.0" prefWidth="267.0" promptText="Quantity On Hand">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txtDiscount" labelFloat="true" layoutX="966.0" layoutY="154.0" onAction="#moveToUnitPrice" prefHeight="47.0" prefWidth="296.0" promptText="Discount(Rs.)">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txtUnitPrice" labelFloat="true" layoutX="1315.0" layoutY="154.0" prefHeight="47.0" prefWidth="293.0" promptText="Unit Price(Rs.)">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXButton buttonType="RAISED" layoutX="1464.0" layoutY="256.0" onAction="#clearOnAction" prefHeight="47.0" prefWidth="141.0" stylesheets="@assets/styles/Button.css" text="Clear">
+                           <font>
+                              <Font name="System Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutX="1079.0" layoutY="256.0" onAction="#updateItemOnAction" prefHeight="47.0" prefWidth="174.0" stylesheets="@assets/styles/Button.css" text="Update Item">
+                           <font>
+                              <Font name="System Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton fx:id="btnAddItem" buttonType="RAISED" layoutX="879.0" layoutY="256.0" onAction="#addItemOnAction" prefHeight="47.0" prefWidth="174.0" stylesheets="@assets/styles/Button.css" text="Add Item">
+                           <font>
+                              <Font name="System Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXTextField fx:id="txtSearchCode" labelFloat="true" layoutX="324.0" layoutY="256.0" onAction="#searchItemOnAction" prefHeight="47.0" prefWidth="335.0" promptText="Search Item Code">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXButton buttonType="RAISED" layoutX="1274.0" layoutY="256.0" onAction="#deleteItemOnAction" prefHeight="47.0" prefWidth="174.0" stylesheets="@assets/styles/Button.css" text="Delete Item">
+                           <font>
+                              <Font name="System Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab styleClass="tab-main" text="Customer List">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tblCustomer" layoutX="321.0" layoutY="126.0" prefHeight="557.0" prefWidth="1289.0" style="-fx-background-color: white;">
+                          <columns>
+                            <TableColumn fx:id="colCustId" prefWidth="107.0" text="Customer ID" />
+                            <TableColumn fx:id="colCustomerTitle" prefWidth="154.0" text="Customer Title" />
+                              <TableColumn fx:id="colCustomerName" prefWidth="203.0" text="Name" />
+                              <TableColumn fx:id="colNIC" prefWidth="150.0" text="NIC" />
+                              <TableColumn fx:id="colCustomerAddress" prefWidth="211.0" text="Address" />
+                              <TableColumn fx:id="colCustomerCity" prefWidth="151.0" text="City" />
+                              <TableColumn fx:id="colCustomerProvince" prefWidth="173.0" text="Province" />
+                              <TableColumn fx:id="colPostalCode" prefWidth="139.0" text="Postal Code" />
+                          </columns>
+                           <contextMenu>
+                              <ContextMenu>
+                                <items>
+                                  <MenuItem mnemonicParsing="false" onAction="#deleteCustomerOnAction" text="Delete" />
+                                </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab styleClass="tab-main" text="Reports">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXRadioButton layoutX="283.0" layoutY="80.0" text="Annual Income Report">
+                           <font>
+                              <Font name="System Bold" size="26.0" />
+                           </font>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="tgReports" />
+                           </toggleGroup>
+                        </JFXRadioButton>
+                        <JFXRadioButton layoutX="283.0" layoutY="153.0" text="Monthly Income Report" toggleGroup="$tgReports">
+                           <font>
+                              <Font name="System Bold" size="26.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton layoutX="283.0" layoutY="226.0" text="Daily Income Report" toggleGroup="$tgReports">
+                           <font>
+                              <Font name="System Bold" size="26.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton layoutX="283.0" layoutY="299.0" text="Customer wise Income Report" toggleGroup="$tgReports">
+                           <font>
+                              <Font name="System Bold" size="26.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton layoutX="283.0" layoutY="372.0" text="Most Movable Item" toggleGroup="$tgReports">
+                           <font>
+                              <Font name="System Bold" size="26.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton layoutX="283.0" layoutY="445.0" text="Least Movable Item" toggleGroup="$tgReports">
+                           <font>
+                              <Font name="System Bold" size="26.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <Spinner fx:id="spYear" layoutX="747.0" layoutY="79.0" prefHeight="40.0" prefWidth="132.0" />
+                        <Spinner fx:id="spMonth" layoutX="940.0" layoutY="152.0" prefHeight="40.0" prefWidth="232.0" />
+                        <Label layoutX="747.0" layoutY="58.0" text="Year">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="940.0" layoutY="130.0" text="Month">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Spinner fx:id="spYearForMonthly" layoutX="747.0" layoutY="152.0" prefHeight="40.0" prefWidth="132.0" />
+                        <Label layoutX="747.0" layoutY="130.0" text="Year">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="date" layoutX="747.0" layoutY="225.0" prefHeight="40.0" prefWidth="209.0" />
+                        <Label layoutX="747.0" layoutY="205.0" text="Date">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="cmbCustomerNIC" layoutX="747.0" layoutY="298.0" prefHeight="40.0" prefWidth="245.0" />
+                        <Label layoutX="747.0" layoutY="278.0" text="Customer NIC">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <JFXButton fx:id="btnGenerate" buttonType="RAISED" layoutX="887.0" layoutY="578.0" onAction="#generateReportOnAction" prefHeight="47.0" prefWidth="157.0" stylesheets="@assets/styles/Button.css" text="Generate">
+                           <font>
+                              <Font name="System Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab styleClass="tab-main" text="User Management">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane layoutX="619.0" layoutY="81.0" prefHeight="663.0" prefWidth="694.0" style="-fx-border-color: black; -fx-border-radius: 50;">
+                           <children>
+                              <Label alignment="CENTER" layoutX="15.0" layoutY="35.0" prefHeight="56.0" prefWidth="662.0" text="Sign Up Form">
+                                 <font>
+                                    <Font name="System Bold" size="30.0" />
+                                 </font>
+                              </Label>
+                              <Separator layoutX="15.0" layoutY="102.0" prefHeight="5.0" prefWidth="655.0" />
+                              <JFXTextField fx:id="txtFirstName" labelFloat="true" layoutX="99.0" layoutY="135.0" onAction="#moveToLastName" prefHeight="31.0" prefWidth="496.0" promptText="First Name">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtLastName" labelFloat="true" layoutX="99.0" layoutY="203.0" onAction="#moveToUserName" prefHeight="31.0" prefWidth="496.0" promptText="Last Name">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtUserName" labelFloat="true" layoutX="99.0" layoutY="271.0" onAction="#moveToPassword" prefHeight="31.0" prefWidth="496.0" promptText="User Name">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXButton layoutX="238.0" layoutY="555.0" onAction="#signUpUsersOnAction" prefHeight="40.0" prefWidth="217.0" stylesheets="@assets/styles/Button.css" text="SignUp">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                              <JFXComboBox fx:id="cmbUserType" labelFloat="true" layoutX="99.0" layoutY="475.0" prefHeight="31.0" prefWidth="496.0" promptText="User Type">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXComboBox>
+                              <JFXPasswordField fx:id="txtPassword" labelFloat="true" layoutX="99.0" layoutY="339.0" onAction="#moveToConfirmPassword" prefHeight="31.0" prefWidth="496.0" promptText="Password">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </JFXPasswordField>
+                              <JFXPasswordField fx:id="txtConfirmPassword" labelFloat="true" layoutX="99.0" layoutY="407.0" onKeyReleased="#checkPassword" prefHeight="31.0" prefWidth="496.0" promptText="Confirm Password">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </JFXPasswordField>
+                              <ImageView fx:id="imgTick" fitHeight="40.0" fitWidth="33.0" layoutX="562.0" layoutY="410.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@assets/images/icons8-checked.gif" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="imgPasswordTick" fitHeight="40.0" fitWidth="33.0" layoutX="562.0" layoutY="342.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@assets/images/icons8-checked.gif" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </children>
+</AnchorPane>

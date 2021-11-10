@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="signUpFormContext" prefHeight="576.0" prefWidth="429.0" style="-fx-border-color: black; -fx-border-radius: 50;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignUpFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="15.0" layoutY="66.0" prefHeight="56.0" prefWidth="401.0" text="Sign Up Form">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Separator layoutX="15.0" layoutY="122.0" prefHeight="0.0" prefWidth="401.0" />
+      <JFXTextField fx:id="txtFirstName" labelFloat="true" layoutX="47.0" layoutY="155.0" onAction="#moveToLastName" prefHeight="31.0" prefWidth="334.0" promptText="First Name" />
+      <JFXTextField fx:id="txtLastName" labelFloat="true" layoutX="47.0" layoutY="206.0" onAction="#moveToUserName" prefHeight="31.0" prefWidth="334.0" promptText="Last Name" />
+      <JFXTextField fx:id="txtUserName" labelFloat="true" layoutX="47.0" layoutY="257.0" onAction="#moveToSignupPassword" prefHeight="31.0" prefWidth="334.0" promptText="User Name" />
+      <JFXButton layoutX="106.0" layoutY="485.0" onAction="#signUpUsersOnAction" prefHeight="40.0" prefWidth="217.0" stylesheets="@assets/styles/Button.css" text="SignUp">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="56.0" fitWidth="36.0" layoutX="14.0" layoutY="23.0" onMousePressed="#backToLoginForm" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/images/60577.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <JFXComboBox fx:id="cmbUserType" labelFloat="true" layoutX="47.0" layoutY="413.0" prefHeight="36.0" prefWidth="334.0" promptText="User Type" />
+      <JFXPasswordField fx:id="txtPassword" labelFloat="true" layoutX="47.0" layoutY="308.0" onAction="#moveToConfirmPassword" prefHeight="31.0" prefWidth="334.0" promptText="Password" />
+      <JFXPasswordField fx:id="txtConfirmPassword" labelFloat="true" layoutX="47.0" layoutY="359.0" onKeyReleased="#checkPassword" prefHeight="31.0" prefWidth="334.0" promptText="Confirm Password" />
+      <ImageView fx:id="imgConfirmTick" fitHeight="31.0" fitWidth="36.0" layoutX="345.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/images/tick-checked.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgPasswordTick" fitHeight="31.0" fitWidth="36.0" layoutX="345.0" layoutY="308.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/images/tick-checked.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
