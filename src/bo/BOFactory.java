@@ -10,18 +10,18 @@ import bo.custom.impl.*;
 public class BOFactory {
     private static BOFactory boFactory;
 
-    private BOFactory(){
+    private BOFactory() {
 
     }
 
-    public static BOFactory getBoFactory(){
-        if(boFactory==null){
-            boFactory=new BOFactory();
+    public static BOFactory getBoFactory() {
+        if (boFactory == null) {
+            boFactory = new BOFactory();
         }
         return boFactory;
     }
 
-    public SuperBO getBO(BOTypes types){
+    public SuperBO getBO(BOTypes types) {
         switch (types) {
             case ADMIN:
                 return new AdminDashBoardBOImpl();
@@ -40,7 +40,7 @@ public class BOFactory {
         }
     }
 
-    public enum BOTypes{
-        ADMIN,CASHIER,LOGIN,SAVED_ORDER,SIGNUP,STOCK
+    public enum BOTypes {
+        ADMIN, CASHIER, LOGIN, SAVED_ORDER, SIGNUP, STOCK
     }
 }
