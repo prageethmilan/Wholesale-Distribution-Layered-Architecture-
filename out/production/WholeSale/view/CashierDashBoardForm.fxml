@@ -21,12 +21,12 @@
             <Font name="High Tower Text Italic" size="79.0" />
          </font>
       </Label>
-      <Label fx:id="lblDate" alignment="CENTER_RIGHT" layoutX="1724.0" layoutY="81.0" text="2021 - 08 - 20">
+      <Label fx:id="lblDate" alignment="CENTER_RIGHT" layoutX="1702.0" layoutY="82.0" text="2021 - 08 - 20">
          <font>
             <Font name="System Bold" size="28.0" />
          </font>
       </Label>
-      <Label fx:id="lblTime" alignment="CENTER_RIGHT" layoutX="1675.0" text="08:15:26">
+      <Label fx:id="lblTime" alignment="CENTER_RIGHT" layoutX="1634.0" layoutY="2.0" text="08:15:26">
          <font>
             <Font name="System Bold" size="58.0" />
          </font>
@@ -56,7 +56,7 @@
                         <Font size="18.0" />
                      </font>
                   </JFXTextField>
-                  <JFXButton fx:id="btnAddCustomer" buttonType="RAISED" layoutX="402.0" layoutY="262.0" onAction="#addCustomerOnAction" prefHeight="54.0" prefWidth="144.0" text="Add Customer">
+                  <JFXButton fx:id="btnAddCustomer" buttonType="RAISED" layoutX="363.0" layoutY="262.0" onAction="#addCustomerOnAction" prefHeight="54.0" prefWidth="169.0" text="Add Customer">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
@@ -64,7 +64,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </JFXButton>
-                  <JFXButton buttonType="RAISED" layoutX="559.0" layoutY="262.0" onAction="#updateCustomerOnAction" prefHeight="54.0" prefWidth="159.0" text="Update Customer">
+                  <JFXButton buttonType="RAISED" layoutX="545.0" layoutY="262.0" onAction="#updateCustomerOnAction" prefHeight="54.0" prefWidth="185.0" text="Update Customer">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
@@ -97,7 +97,7 @@
                         <Font size="18.0" />
                      </font>
                   </JFXTextField>
-                  <JFXButton buttonType="RAISED" layoutX="730.0" layoutY="262.0" onAction="#clearCustomerDetails" prefHeight="54.0" prefWidth="144.0" text="Clear">
+                  <JFXButton buttonType="RAISED" layoutX="737.0" layoutY="262.0" onAction="#clearCustomerDetails" prefHeight="54.0" prefWidth="144.0" text="Clear">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
@@ -110,7 +110,7 @@
             </AnchorPane>
             <AnchorPane layoutX="1085.0" layoutY="79.0" prefHeight="287.0" prefWidth="765.0" style="-fx-border-radius: 50; -fx-border-color: black;" stylesheets="@assets/styles/Button.css">
                <children>
-                  <JFXButton fx:id="btnAddToCart" buttonType="RAISED" layoutX="430.0" layoutY="189.0" onAction="#addToCartOnAction" prefHeight="47.0" prefWidth="144.0" text="Add To Cart">
+                  <JFXButton fx:id="btnAddToCart" buttonType="RAISED" layoutX="413.0" layoutY="189.0" onAction="#addToCartOnAction" prefHeight="47.0" prefWidth="161.0" text="Add To Cart">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
@@ -190,12 +190,12 @@
                         <TableColumn fx:id="colTotal" prefWidth="171.0" text="Total(Rs.)" />
                     </columns>
                   </TableView>
-                  <Label layoutX="27.0" layoutY="31.0" prefHeight="30.0" prefWidth="119.0" text="Order ID :- ">
+                  <Label layoutX="27.0" layoutY="31.0" prefHeight="30.0" prefWidth="128.0" text="Order ID :- ">
                      <font>
                         <Font name="System Bold" size="20.0" />
                      </font>
                   </Label>
-                  <Label fx:id="lblOrderId" layoutX="143.0" layoutY="31.0" prefHeight="30.0" prefWidth="94.0" text="O-0001">
+                  <Label fx:id="lblOrderId" layoutX="158.0" layoutY="31.0" prefHeight="30.0" prefWidth="94.0" text="O-0001">
                      <font>
                         <Font name="System Bold" size="20.0" />
                      </font>
@@ -217,17 +217,17 @@
                </font>
             </Label>
             <Circle layoutX="40.0" layoutY="479.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
-            <Label layoutX="1085.0" layoutY="425.0" text="Gross Amount  :- ">
+            <Label layoutX="1058.0" layoutY="430.0" text="Gross Amount  :- ">
                <font>
                   <Font name="System Bold" size="38.0" />
                </font>
             </Label>
-            <Label layoutX="1088.0" layoutY="491.0" text="Total Discount :- ">
+            <Label layoutX="1061.0" layoutY="496.0" text="Total Discount :- ">
                <font>
                   <Font name="System Bold" size="38.0" />
                </font>
             </Label>
-            <Label layoutX="1087.0" layoutY="557.0" text="Net Amount     :- ">
+            <Label layoutX="1061.0" layoutY="562.0" text="Net Amount     :- ">
                <font>
                   <Font name="System Bold" size="38.0" />
                </font>
@@ -247,23 +247,23 @@
                   <Font name="System Bold" size="38.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" layoutX="1426.0" layoutY="425.0" prefHeight="55.0" prefWidth="62.0" text="Rs." textFill="#f70202">
+            <Label alignment="CENTER" layoutX="1426.0" layoutY="426.0" prefHeight="55.0" prefWidth="74.0" text="Rs." textFill="#f70202">
                <font>
                   <Font name="System Bold" size="38.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" layoutX="1426.0" layoutY="491.0" prefHeight="55.0" prefWidth="62.0" text="Rs." textFill="#f70202">
+            <Label alignment="CENTER" layoutX="1426.0" layoutY="491.0" prefHeight="55.0" prefWidth="74.0" text="Rs." textFill="#f70202">
                <font>
                   <Font name="System Bold" size="38.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" layoutX="1426.0" layoutY="557.0" prefHeight="55.0" prefWidth="62.0" text="Rs." textFill="#f70202">
+            <Label alignment="CENTER" layoutX="1426.0" layoutY="557.0" prefHeight="55.0" prefWidth="74.0" text="Rs." textFill="#f70202">
                <font>
                   <Font name="System Bold" size="38.0" />
                </font>
             </Label>
             <Separator layoutX="1397.0" layoutY="556.0" prefHeight="3.0" prefWidth="324.0" style="-fx-background-color: black;" />
-            <JFXButton buttonType="RAISED" layoutX="1463.0" layoutY="785.0" onAction="#saveOrderOnAction" prefHeight="54.0" prefWidth="192.0" stylesheets="@assets/styles/Button.css" text="Save Order">
+            <JFXButton buttonType="RAISED" layoutX="1463.0" layoutY="785.0" onAction="#saveOrderOnAction" prefHeight="54.0" prefWidth="210.0" stylesheets="@assets/styles/Button.css" text="Save Order">
                <font>
                   <Font name="System Bold" size="27.0" />
                </font>
@@ -279,7 +279,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="1230.0" layoutY="785.0" onAction="#loadSavedOrdersOnAction" prefHeight="59.0" prefWidth="203.0" stylesheets="@assets/styles/Button.css" text="Load Orders">
+            <JFXButton buttonType="RAISED" layoutX="1208.0" layoutY="785.0" onAction="#loadSavedOrdersOnAction" prefHeight="59.0" prefWidth="225.0" stylesheets="@assets/styles/Button.css" text="Load Orders">
                <font>
                   <Font name="System Bold" size="27.0" />
                </font>
@@ -289,7 +289,7 @@
             </JFXButton>
          </children>
       </AnchorPane>
-      <JFXButton buttonType="RAISED" layoutX="23.0" layoutY="38.0" onAction="#backToLogin" prefHeight="44.0" prefWidth="119.0" stylesheets="@assets/styles/Button.css" text="Log Out">
+      <JFXButton buttonType="RAISED" layoutX="23.0" layoutY="38.0" onAction="#backToLogin" prefHeight="44.0" prefWidth="128.0" stylesheets="@assets/styles/Button.css" text="Log Out">
          <font>
             <Font name="System Bold" size="21.0" />
          </font>
