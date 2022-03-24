@@ -27,7 +27,7 @@
 <AnchorPane fx:id="adminDashBoardContext" prefHeight="1000.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminDashBoardFormController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f63c9" height="134.0" stroke="BLACK" strokeType="INSIDE" width="1931.0" />
-      <JFXButton buttonType="RAISED" layoutX="33.0" layoutY="44.0" onAction="#backToLogin" prefHeight="44.0" prefWidth="119.0" stylesheets="@assets/styles/Button.css" text="Log Out">
+      <JFXButton buttonType="RAISED" layoutX="33.0" layoutY="44.0" onAction="#backToLogin" prefHeight="44.0" prefWidth="144.0" stylesheets="@assets/styles/Button.css" text="Log Out">
          <font>
             <Font name="System Bold" size="21.0" />
          </font>
@@ -40,12 +40,12 @@
             <Font name="High Tower Text Italic" size="79.0" />
          </font>
       </Label>
-      <Label fx:id="lblDate" alignment="CENTER_RIGHT" layoutX="1734.0" layoutY="91.0" text="2021 - 08 - 20">
+      <Label fx:id="lblDate" alignment="CENTER_RIGHT" layoutX="1712.0" layoutY="88.0" text="2021 - 08 - 20">
          <font>
             <Font name="System Bold" size="28.0" />
          </font>
       </Label>
-      <Label fx:id="lblTime" alignment="CENTER_RIGHT" layoutX="1666.0" layoutY="1.0" prefHeight="94.0" prefWidth="251.0" text="08:15:26">
+      <Label fx:id="lblTime" alignment="CENTER_RIGHT" layoutX="1615.0" layoutY="1.0" prefHeight="94.0" prefWidth="302.0" text="08:15:26">
          <font>
             <Font name="System Bold" size="58.0" />
          </font>
@@ -105,7 +105,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </JFXButton>
-                        <JFXButton buttonType="RAISED" layoutX="1079.0" layoutY="256.0" onAction="#updateItemOnAction" prefHeight="47.0" prefWidth="174.0" stylesheets="@assets/styles/Button.css" text="Update Item">
+                        <JFXButton buttonType="RAISED" layoutX="1079.0" layoutY="256.0" onAction="#updateItemOnAction" prefHeight="47.0" prefWidth="180.0" stylesheets="@assets/styles/Button.css" text="Update Item">
                            <font>
                               <Font name="System Bold" size="21.0" />
                            </font>
@@ -201,32 +201,32 @@
                               <Font name="System Bold" size="26.0" />
                            </font>
                         </JFXRadioButton>
-                        <Spinner fx:id="spYear" layoutX="747.0" layoutY="79.0" prefHeight="40.0" prefWidth="132.0" />
-                        <Spinner fx:id="spMonth" layoutX="940.0" layoutY="152.0" prefHeight="40.0" prefWidth="232.0" />
-                        <Label layoutX="747.0" layoutY="58.0" text="Year">
+                        <Spinner fx:id="spYear" layoutX="768.0" layoutY="79.0" prefHeight="40.0" prefWidth="132.0" />
+                        <Spinner fx:id="spMonth" layoutX="961.0" layoutY="152.0" prefHeight="40.0" prefWidth="232.0" />
+                        <Label layoutX="768.0" layoutY="58.0" text="Year">
                            <font>
                               <Font name="System Bold" size="15.0" />
                            </font>
                         </Label>
-                        <Label layoutX="940.0" layoutY="130.0" text="Month">
+                        <Label layoutX="961.0" layoutY="130.0" text="Month">
                            <font>
                               <Font name="System Bold" size="15.0" />
                            </font>
                         </Label>
-                        <Spinner fx:id="spYearForMonthly" layoutX="747.0" layoutY="152.0" prefHeight="40.0" prefWidth="132.0" />
-                        <Label layoutX="747.0" layoutY="130.0" text="Year">
+                        <Spinner fx:id="spYearForMonthly" layoutX="768.0" layoutY="152.0" prefHeight="40.0" prefWidth="132.0" />
+                        <Label layoutX="768.0" layoutY="130.0" text="Year">
                            <font>
                               <Font name="System Bold" size="15.0" />
                            </font>
                         </Label>
-                        <DatePicker fx:id="date" layoutX="747.0" layoutY="225.0" prefHeight="40.0" prefWidth="209.0" />
-                        <Label layoutX="747.0" layoutY="205.0" text="Date">
+                        <DatePicker fx:id="date" layoutX="768.0" layoutY="225.0" prefHeight="40.0" prefWidth="209.0" />
+                        <Label layoutX="768.0" layoutY="205.0" text="Date">
                            <font>
                               <Font name="System Bold" size="15.0" />
                            </font>
                         </Label>
-                        <ComboBox fx:id="cmbCustomerNIC" layoutX="747.0" layoutY="298.0" prefHeight="40.0" prefWidth="245.0" />
-                        <Label layoutX="747.0" layoutY="278.0" text="Customer NIC">
+                        <ComboBox fx:id="cmbCustomerNIC" layoutX="768.0" layoutY="298.0" prefHeight="40.0" prefWidth="245.0" />
+                        <Label layoutX="768.0" layoutY="278.0" text="Customer NIC">
                            <font>
                               <Font name="System Bold" size="15.0" />
                            </font>

@@ -339,7 +339,7 @@ public class AdminDashBoardFormController {
         if (!txtDescription.getText().matches("^[A-z0-9 &,]{3,}$")) {
             new Alert(Alert.AlertType.ERROR, "Description must be at least 3 characters long").show();
             return;
-        } else if (!txtPackSize.getText().matches("^[1-9]+$")) {
+        } else if (!txtPackSize.getText().matches("^[0-9]+$")) {
             new Alert(Alert.AlertType.ERROR, "Invalid Pack Size.(Ex :- 4)").show();
             return;
         } else if (!txtQuantityOnHand.getText().matches("^\\d+$")) {
