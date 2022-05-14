@@ -52,7 +52,7 @@
             <Font name="System Bold" size="20.0" />
          </font>
       </JFXTextField>
-      <JFXButton fx:id="btnAddToCart" buttonType="RAISED" layoutX="644.0" layoutY="289.0" onAction="#addToCartOnAction" prefHeight="47.0" prefWidth="144.0" stylesheets="@assets/styles/Button.css" text="Add To Cart">
+      <JFXButton fx:id="btnAddToCart" buttonType="RAISED" layoutX="633.0" layoutY="289.0" onAction="#addToCartOnAction" prefHeight="47.0" prefWidth="155.0" stylesheets="@assets/styles/Button.css" text="Add To Cart">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
@@ -91,77 +91,77 @@
             <Font name="System Bold" size="27.0" />
          </font>
       </Label>
-      <Label layoutX="517.0" layoutY="717.0" text="Rs." textFill="RED">
+      <Label layoutX="558.0" layoutY="717.0" text="Rs." textFill="RED">
          <font>
             <Font name="System Bold" size="27.0" />
          </font>
       </Label>
-      <Label fx:id="lblGrossAmount" alignment="CENTER_RIGHT" layoutX="569.0" layoutY="717.0" prefHeight="39.0" prefWidth="200.0" text="0.00" textFill="RED">
+      <Label fx:id="lblGrossAmount" alignment="CENTER_RIGHT" layoutX="610.0" layoutY="717.0" prefHeight="39.0" prefWidth="200.0" text="0.00" textFill="RED">
          <font>
             <Font name="System Bold" size="27.0" />
          </font>
       </Label>
-      <Label layoutX="293.0" layoutY="764.0" prefHeight="39.0" prefWidth="215.0" text="Total Discount :-">
+      <Label layoutX="293.0" layoutY="764.0" prefHeight="39.0" prefWidth="257.0" text="Total Discount :-">
          <font>
             <Font name="System Bold" size="27.0" />
          </font>
       </Label>
-      <Label layoutX="517.0" layoutY="764.0" text="Rs." textFill="RED">
+      <Label layoutX="558.0" layoutY="764.0" text="Rs." textFill="RED">
          <font>
             <Font name="System Bold" size="27.0" />
          </font>
       </Label>
-      <Label fx:id="lblTotalDiscount" alignment="CENTER_RIGHT" layoutX="569.0" layoutY="764.0" prefHeight="39.0" prefWidth="200.0" text="0.00" textFill="RED">
+      <Label fx:id="lblTotalDiscount" alignment="CENTER_RIGHT" layoutX="610.0" layoutY="764.0" prefHeight="39.0" prefWidth="200.0" text="0.00" textFill="RED">
          <font>
             <Font name="System Bold" size="27.0" />
          </font>
       </Label>
-      <Label layoutX="294.0" layoutY="811.0" prefHeight="39.0" prefWidth="215.0" text="Net Amount     :-">
+      <Label layoutX="294.0" layoutY="811.0" prefHeight="39.0" prefWidth="257.0" text="Net Amount     :-">
          <font>
             <Font name="System Bold" size="27.0" />
          </font>
       </Label>
-      <Label layoutX="518.0" layoutY="811.0" text="Rs." textFill="RED">
+      <Label layoutX="559.0" layoutY="811.0" text="Rs." textFill="RED">
          <font>
             <Font name="System Bold" size="27.0" />
          </font>
       </Label>
-      <Label fx:id="lblNetAmount" alignment="CENTER_RIGHT" layoutX="570.0" layoutY="811.0" prefHeight="39.0" prefWidth="200.0" text="0.00" textFill="RED">
+      <Label fx:id="lblNetAmount" alignment="CENTER_RIGHT" layoutX="611.0" layoutY="811.0" prefHeight="39.0" prefWidth="200.0" text="0.00" textFill="RED">
          <font>
             <Font name="System Bold" size="27.0" />
          </font>
       </Label>
-      <Label layoutX="293.0" layoutY="858.0" prefHeight="39.0" prefWidth="215.0" text="Cash                  :-">
+      <Label layoutX="293.0" layoutY="858.0" prefHeight="39.0" prefWidth="257.0" text="Cash                 :-">
          <font>
             <Font name="System Bold" size="27.0" />
          </font>
       </Label>
-      <Label layoutX="518.0" layoutY="858.0" text="Rs." textFill="RED">
+      <Label layoutX="559.0" layoutY="858.0" text="Rs." textFill="RED">
          <font>
             <Font name="System Bold" size="27.0" />
          </font>
       </Label>
-      <TextField fx:id="txtCash" alignment="CENTER_RIGHT" layoutX="569.0" layoutY="850.0" onAction="#cashPaymentOnAction" prefHeight="31.0" prefWidth="200.0">
+      <TextField fx:id="txtCash" alignment="CENTER_RIGHT" layoutX="610.0" layoutY="850.0" onAction="#cashPaymentOnAction" prefHeight="31.0" prefWidth="200.0">
          <font>
             <Font size="21.0" />
          </font>
       </TextField>
-      <Label layoutX="293.0" layoutY="913.0" prefHeight="39.0" prefWidth="215.0" text="Balance             :-">
+      <Label layoutX="293.0" layoutY="913.0" prefHeight="39.0" prefWidth="257.0" text="Balance            :-">
          <font>
             <Font name="System Bold" size="27.0" />
          </font>
       </Label>
-      <Label layoutX="518.0" layoutY="913.0" text="Rs." textFill="RED">
+      <Label layoutX="559.0" layoutY="913.0" text="Rs." textFill="RED">
          <font>
             <Font name="System Bold" size="27.0" />
          </font>
       </Label>
-      <Label fx:id="lblBalance" alignment="CENTER_RIGHT" layoutX="570.0" layoutY="913.0" prefHeight="39.0" prefWidth="200.0" text="0.00" textFill="RED">
+      <Label fx:id="lblBalance" alignment="CENTER_RIGHT" layoutX="611.0" layoutY="913.0" prefHeight="39.0" prefWidth="200.0" text="0.00" textFill="RED">
          <font>
             <Font name="System Bold" size="27.0" />
          </font>
       </Label>
-      <JFXButton fx:id="btnPlaceOrder" buttonType="RAISED" layoutX="873.0" layoutY="780.0" onAction="#placeOrderOnAction" prefHeight="47.0" prefWidth="144.0" style="-fx-background-color: #4cd137;" stylesheets="@assets/styles/Button.css" text="Place Order">
+      <JFXButton fx:id="btnPlaceOrder" buttonType="RAISED" layoutX="862.0" layoutY="780.0" onAction="#placeOrderOnAction" prefHeight="47.0" prefWidth="155.0" style="-fx-background-color: #4cd137;" stylesheets="@assets/styles/Button.css" text="Place Order">
          <font>
             <Font name="System Bold" size="19.0" />
          </font>
@@ -169,7 +169,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="873.0" layoutY="849.0" onAction="#deleteOrderOnAction" prefHeight="47.0" prefWidth="144.0" stylesheets="@assets/styles/Button.css" text="Delete Order">
+      <JFXButton buttonType="RAISED" layoutX="862.0" layoutY="849.0" onAction="#deleteOrderOnAction" prefHeight="47.0" prefWidth="160.0" stylesheets="@assets/styles/Button.css" text="Delete Order">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
@@ -177,8 +177,8 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <Separator layoutX="519.0" layoutY="802.0" prefHeight="3.0" prefWidth="249.0" style="-fx-background-color: black;" />
-      <Separator layoutX="519.0" layoutY="904.0" prefHeight="3.0" prefWidth="249.0" style="-fx-background-color: black;" />
+      <Separator layoutX="560.0" layoutY="802.0" prefHeight="3.0" prefWidth="249.0" style="-fx-background-color: black;" />
+      <Separator layoutX="560.0" layoutY="904.0" prefHeight="3.0" prefWidth="249.0" style="-fx-background-color: black;" />
       <JFXComboBox fx:id="cmbOrderId" labelFloat="true" layoutX="409.0" layoutY="104.0" prefHeight="31.0" prefWidth="169.0" promptText="Order ID">
          <cursor>
             <Cursor fx:constant="HAND" />
@@ -194,12 +194,12 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <Label fx:id="lblTime" alignment="CENTER" layoutX="688.0" layoutY="6.0" prefHeight="48.0" prefWidth="200.0" text="08:10:42">
+      <Label fx:id="lblTime" alignment="CENTER" layoutX="673.0" layoutY="6.0" prefHeight="52.0" prefWidth="215.0" text="08:10:42">
          <font>
             <Font name="System Bold" size="43.0" />
          </font>
       </Label>
-      <Label fx:id="lblDate" alignment="CENTER_RIGHT" layoutX="901.0" layoutY="28.0" prefHeight="39.0" prefWidth="144.0" text="2021-04-25">
+      <Label fx:id="lblDate" alignment="CENTER_RIGHT" layoutX="901.0" layoutY="28.0" prefHeight="39.0" prefWidth="155.0" text="2021-04-25">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
